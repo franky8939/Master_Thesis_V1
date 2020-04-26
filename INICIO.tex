@@ -1,0 +1,198 @@
+\documentclass[11pt,english]{report}
+
+\usepackage{paquetes_todos}
+
+\usepackage[showboxes]{textpos}
+%\setlength{\baselineskip}{1}
+
+\newenvironment{itemize_f}%
+  {\begin{itemize}%
+    \setlength{\itemsep}{0pt}%
+    \setlength{\parskip}{0pt}}%
+  {\end{itemize}}
+%\setlength\itemsep{-.2cm} %
+\usepackage{framed}
+
+\usepackage{lineno}
+\linenumbers
+\usepackage{natbib}
+\usepackage{dsfont}
+\usepackage{multibib}
+
+\begin{document}
+% Portada
+\title{Activity report Thesis}
+\author{Francisco Martínez Sánchez}
+\prevdegrees{Bs. Physics}
+%\prevdegrees{Grados previos}
+\institute{UNISON}
+\department{DIFUS}
+\degree{Master}
+\supervisor{Dr. Alfredo Castañeda}
+\city{Sonora/Hermosillo}
+\degreemonth{Mes}
+\degreeyear{Año}
+\maketitle
+%\begin{acknowledgements}
+
+%\end{acknowledgements}
+
+\tableofcontents
+\clearpage
+\listoftables
+\clearpage
+\listoffigures
+\clearpage
+
+\begin{abstract}
+\end{abstract}
+
+%\begin{summary}
+%\end{summary}
+
+\pagenumbering{arabic}
+
+
+
+\input{link.tex}
+%overleaf
+%local
+\input{Introduccion/Introduccion.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Cap Fisica de Particulas %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Física de Partículas}
+\input{Fisica_de_Particulas/Introduccion.tex}
+
+	\section{El Universo y su evolución} 
+	\input{Fisica_de_Particulas/Universo.tex}
+	
+	\section{Modelo Estándar} 	
+	\input{Fisica_de_Particulas/Modelo_estandar.tex}
+	
+		\subsection{Composición de la Materia y Fuerzas Fundamentales} 
+		\input{Fisica_de_Particulas/Materia_y_Fuerzas.tex}
+		
+		\subsection{Simetrías y Lagrangiano*} 
+		\input{Fisica_de_Particulas/lagrangiano_modelo_estandar.tex}
+	
+		\subsection{Insuficiencias del modelo*}
+		\input{Fisica_de_Particulas/Insuficiencias_ME.tex}
+	
+	
+	\section{M\'as all\'a del modelo est\'andar con la Materia Oscura}
+	\input{Fisica_de_Particulas/Materia_Oscura.tex}
+	
+		\subsection{Evidencias observacionales}
+		\input{Fisica_de_Particulas/Pruebas_Oscuras.tex}
+		
+		\subsection{Alternativas Teóricas}
+		\input{Fisica_de_Particulas/Alternativas_Oscura.tex}
+		
+		\subsection{Composición de la Materia Oscura}
+		\input{Fisica_de_Particulas/Materia_Oscura_Composicion.tex}
+		
+		\subsection{Experimentos de la Materia Oscura}
+		\input{Fisica_de_Particulas/Experimentos_Oscura.tex}		
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Cap Antecedentes Teóricos %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\chapter{Antecedentes Teóricos y Experimentales.}
+\input{Analisis_y_Resultados/Introduccion.tex}
+		
+	\section{Física de Altas Energías.}
+	\input{Analisis_y_Resultados/materia_oscura_LHC.tex}
+		
+		\subsection{Actualizando HLC.}	
+		\input{Analisis_y_Resultados/LHC_Actualizacion.tex}
+	
+	\section{Experimento CMS.}
+	\input{Analisis_y_Resultados/Experimento_CMS_del_CERN.tex}
+	
+	
+		\subsection{Reconstruccion de Muones.}
+		\input{Analisis_y_Resultados/Reconstruccion_Muones.tex}
+		\subsection{Actualizando CMS.*}	
+		\input{Analisis_y_Resultados/CMS_Actualizacion.tex}
+		
+	\section{Simulación en Altas Energías.}
+	\input{Analisis_y_Resultados/Simulacion.tex}
+	
+		\subsection{Implementando ROOT.}
+		\input{Analisis_y_Resultados/Root.tex}
+		
+		\subsection{Visualización de eventos con EVE.}
+		\input{Analisis_y_Resultados/EVE.tex}
+		
+		\subsection{Altas Energías con MadGraph.}
+		\input{Analisis_y_Resultados/MadGraph.tex}
+
+		\subsection{Hadronizacion con Pythia 8.}
+		\input{Analisis_y_Resultados/Pythia.tex}
+
+		\subsection{Simulando el detector con Delphes 3.}
+		\input{Analisis_y_Resultados/Delphes.tex}
+
+		
+
+	\section{Extensión del Modelo Estándar con Supersimetría.*}
+	\input{Analisis_y_Resultados/MSSM.tex}
+	
+		\subsection{Supersimetria.*}
+		\input{Analisis_y_Resultados/Supersimetria.tex}
+		
+		\subsection{Modelo Minimo Estandar Simétrico.*}		
+		\input{Analisis_y_Resultados/Dark_matter_model.tex}
+		
+	%\section{Antecedentes Experimentales del MSSM.}	
+		
+		
+	
+	%\section{Configuración de software para su implementación}
+	%\input{Analisis_y_Resultados/Materiales_y_Metodos.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Other %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Simulación y Análisis de Resultados.*}
+%\input{Simulaciuon/Introduccion.tex}
+
+
+%\section{Muon efficiency parametrization}
+
+%\section{Integration of Dark-SUSY model}
+
+%\section{Delphes Simulation}
+
+%\section{Muon system}
+
+%\subsection{CMS detector}
+
+%\subsection{Luminosity Era}
+
+%\chapter{Simulation}
+
+%\section{Parton Level and Hadronization}
+
+%\section{Detector simulation}
+
+%\chapter{Next steps}
+
+%% Resultados y Analisis
+%\input{Analisis_y_Resultados/Introduccion.tex}
+
+%\input{Analisis_y_Resultados/Analisis_y_Resultados.tex}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\bibliographystyle{UNAMThesis}
+%\bibliographystyle{abbrv}
+%\bibliographystyle{APA}
+\bibliographystyle{UNAMThesis} % estilo bibliografico
+\bibliography{ParticleUnison}
+\addcontentsline{toc}{chapter}{Referencias Bibliográficas}
+\end{document}
